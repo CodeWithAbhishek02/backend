@@ -26,11 +26,11 @@ const userSchema = new Schema({
         index: true
     },
     avatar: {
-        type: string,// cloudanry url
+        type: String, 
         required: true,
     },
     coverImage: {
-        type: string,
+        type: String,
     },
     watchHistory: [
         {
@@ -39,11 +39,11 @@ const userSchema = new Schema({
         }
     ],
     password: {
-        type: string,
+        type: String,
         required: [true, 'password must required']
     },
     refreshToken: {
-        type: string,
+        type: String,
     }
 
 }, { timestamps: true })
